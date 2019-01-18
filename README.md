@@ -5,7 +5,7 @@ Custom gravity plugin for BakkesMod. Allows changing gravity in any direction. (
 
 1. Copy `GravityPlugin.dll` to `<steam_directory>/steamapps/common/rocketleague/Binaries/Win32/bakkesmod/plugins`
 2. Copy `gravityplugin.set` to `<steam_directory>/steamapps/common/rocketleague/Binaries/Win32/bakkesmod/plugins/settings`
-3. In the game console run `plugin load gravityplugin`
+3. Add `plugin load gravityplugin` to `<steam_directory>/steamapps/common/rocketleague/Binaries/Win32/bakkesmod/cfg/plugins.cfg`
 
 ## Commands
 
