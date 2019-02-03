@@ -6,6 +6,7 @@ class GravityPlugin : public BakkesMod::Plugin::BakkesModPlugin
 {
 private:
 	Vector gravity;
+	Vector gravity_ball;
 public:
 	virtual void onLoad();
 	virtual void onUnload();
