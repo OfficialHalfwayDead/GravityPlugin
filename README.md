@@ -13,6 +13,8 @@ Custom gravity plugin for BakkesMod. Allows changing gravity in any direction. (
 
 **gravity_strength** - Set the gravity strength (default: 650)
 
+**gravity_ball_strength** - Multiplier for ball gravity relative to car (default: 1.0)
+
 **gravity_polar** - Set the polar angle for the gravity direction.
 
 **gravity_azimuth** - Set the azimuth angle for the gravity direction.
