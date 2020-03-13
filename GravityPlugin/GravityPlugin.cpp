@@ -2,7 +2,7 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 
-BAKKESMOD_PLUGIN(GravityPlugin, "Custom gravity plugin", "1.0", PLUGINTYPE_FREEPLAY)
+BAKKESMOD_PLUGIN(GravityPlugin, "Custom gravity plugin", "1.1", PLUGINTYPE_FREEPLAY)
 
 void GravityPlugin::onLoad()
 {
@@ -23,7 +23,7 @@ void GravityPlugin::OnChangeActive(std::string oldValue, CVarWrapper cvar)
 	if (oldValue.compare("0") == 0 && cvar.getBoolValue())
 	{
 		gameWrapper->HookEvent("Function TAGame.Car_TA.SetVehicleInput", bind(&GravityPlugin::ApplyGravity, this, std::placeholders::_1));
-		cvarManager->getCvar("sv_soccar_gravity").setValue(0.000001f);
+		cvarManager->getCvar("sv_soccar_gravity").setValue(-0.000001f);
 	}
 	else if (oldValue.compare("1") == 0 && !cvar.getBoolValue())
 	{
